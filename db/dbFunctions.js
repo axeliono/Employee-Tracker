@@ -24,6 +24,32 @@ const questions = [
     ],
   },
 ];
+const employeeQuestions = [
+  {
+    type: "input",
+    name: "employeeFirstName",
+    message: "enter employee first name",
+    validate: (choice) => {
+      return choice ? true : (console.log("Please input a first name", false));
+    }
+  },
+  {
+    type: "input",
+    name: "employeeLastName",
+    message: "enter employee first name",
+    validate: (choice) => {
+      return choice ? true : (console.log("Please input a last name", false));
+    }
+  },
+  {
+    type: "input",
+    name: "employeeFirstName",
+    message: "enter employee last name",
+    validate: (choice) => {
+      return choice ? true : (console.log("Please input a name", false));
+    }
+  }
+]
 
 class employeeDatabase {
   startConnection() {
@@ -51,6 +77,7 @@ class employeeDatabase {
       }
 
       if (answer.starter === "add new employee") {
+        await inquirer.prompt()
         addEmployeeQuery();
       }
 

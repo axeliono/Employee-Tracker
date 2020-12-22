@@ -21,7 +21,7 @@ const viewEmployeeQuery = () => {
       console.table(res);
     }
   );
-  console.log(query.sql);
+  console.table(query.sql);
 };
 
 const viewRoleQuery = () => {
@@ -33,7 +33,7 @@ const viewRoleQuery = () => {
       console.table(res);
     }
   );
-  console.log(query.sql);
+  console.table(query.sql);
 };
 
 const addRoleQuery = () => {
@@ -42,7 +42,7 @@ const addRoleQuery = () => {
     if (err) throw err;
     console.table(res);
   });
-  console.log(query.sql);
+  console.table(query.sql);
 };
 
 const addEmployeeQuery = () => {
@@ -51,7 +51,7 @@ const addEmployeeQuery = () => {
     if (err) throw err;
     console.table(res);
   });
-  console.log(query.sql);
+  console.table(query.sql);
 };
 
 const updateEmployeeQuery = () => {
@@ -60,7 +60,7 @@ const updateEmployeeQuery = () => {
     if (err) throw err;
     console.table(res);
   });
-  console.log(query.sql);
+  console.table(query.sql);
 };
 
 module.exports = {
